@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+    scroll-behavior: smooth;
+    
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+    @media screen and (max-width: 1650px) {
+        font-size: 16px;
+    }
+    
+    @media screen and (max-width: 1450px) {
+        font-size: 15px;
+
+    }
+    
+    @media screen and (max-width: 1080px) {
+        font-size: 12px;
+    }
+    
+    @media screen and (max-width: 900px) {
+        font-size: 10px;
+    }
+    
+    @media screen and (max-width: 768px) {
+        font-size: 8px;
+    }
+    
+    @media screen and (max-width: 667px) {
+        font-size: 7px;
+    }
+}
+
+body {
+    font-family: 'Raleway';
+    background-color: $bunkie-color-light;
+}
+
+a {
+    cursor: pointer;
+}
