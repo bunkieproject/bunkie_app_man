@@ -20,15 +20,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,400" rel="stylesheet">
 
     <!-- Style and Scripts -->
-    <link rel="shortcut icon" type="image/x-icon" href="docs/img/icon.png" />
-    <link rel="stylesheet" href="static/css/style.css">
-    <script src="script/login.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="../docs/img/icon.png" />
+    <link rel="stylesheet" href="../static/css/style.css">
+    <script src="../script/user.js"></script>
+    <script src="../script/reset.js"></script>
 </head>
 
 
 <body>
 
 </body>
+    <section id="console-section">
 
+        <!-- Forms -->
+        <div id="ban-warn-form">
+            <form name="ban" action="" method="post" onsubmit="banUser(this); return false;">
+                <input type="text" name="user-id" placeholder="User ID">
+                <input id="ban-submit-btn" type="submit" value="Ban">
+            </form>
 
+            <form name="warn" action="" method="post" onsubmit="warnUser(this); return false;">
+                <input type="text" name="user-id" placeholder="User ID">
+                <textarea name="message" placeholder="Enter your warning message..."></textarea>
+                <input id="warn-submit-btn" type="submit" value="Warn">
+            </form>
+        </div>
+
+        <!-- Clear -->
+        <div id="reset-form">
+            <form name="reset" action="" method="post" onsubmit="resetSystem(); return false;">
+                <input id="ban-submit-btn" type="submit" value="Reset">
+            </form>
+        </div>
+    </section>
 </html>
