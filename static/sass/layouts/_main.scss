@@ -1,0 +1,85 @@
+#console-section {
+    margin: auto;
+    width: 75%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    input, textarea {
+        margin: 0rem 0.5rem;
+        padding: 0.5rem 1.5rem;
+        border-radius: 1rem;
+        border-color: transparent;
+        color: $bunkie-color-dark;
+        box-shadow: 0.1rem 0.1rem 0.5rem $bunkie-color-dark;
+    }
+
+    #ban-warn-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+
+        form {
+            display: flex;
+            align-items: flex-start;
+            margin: 1rem 0rem;
+
+            textarea {
+                transform: height, 0.5s;
+
+                &:focus {
+                    height: 5rem;
+                }
+            }
+
+            #ban-submit-btn {
+                background-color: rgb(238, 53, 47);
+                font-size: $bunkie-font-l;
+                color: white;
+                transform: background-color, 0.5s;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: darken(rgb(238, 53, 47), 10);
+                }
+            }
+
+            #warn-submit-btn {
+                background-color: rgb(255, 204, 66);
+                font-size: $bunkie-font-l;
+                color: black;
+                transform: background-color, 0.5s;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color:  darken(rgb(255, 204, 66), 10);
+                }
+            }
+        }
+    }
+
+    #reset-form {
+        form {
+            display: flex;
+            align-items: flex-start;
+            margin: 1rem 0rem;
+            
+            input {
+                padding: 0.5rem 1rem;
+                font-size: $bunkie-font-l;
+                color: white;
+                
+                background-color: $bunkie-color-bright;
+                transform: background-color, 0.5s;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: darken($bunkie-color-bright, 10);
+                }
+            }
+        }
+    }
+}

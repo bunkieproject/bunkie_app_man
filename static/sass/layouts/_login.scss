@@ -1,0 +1,55 @@
+#login-section {
+    margin: auto;
+    width: 50%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    #logo {
+        width: 10rem;
+        height: 10rem;
+        margin-top: 10vh;
+        text-align: center;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    #login-form {
+        background-color: $bunkie-color-bright;
+        border-radius: 1rem;
+        padding: 1.5rem 1rem;
+        box-shadow: 0.1rem 0.1rem 0.5rem $bunkie-color-dark;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            input {
+                margin: 0.5rem 0rem;
+                padding: 0.25rem 1rem;
+                border-radius: 1rem;
+                border-color: transparent;
+                color: $bunkie-color-dark;
+                box-shadow: 0.05rem 0.05rem 0.5rem $bunkie-color-dark;
+            }
+
+            #submit-btn {
+                background-color: $bunkie-color-dark;
+                color: $bunkie-color-light;
+                transform: background-color, 0.5s;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: lighten($bunkie-color-dark, 7.5);
+                }
+            }
+        }
+    }
+}
