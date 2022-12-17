@@ -23,6 +23,7 @@
         background-color: $bunkie-color-bright;
         border-radius: 1rem;
         padding: 1.5rem 1rem;
+        box-shadow: 0.1rem 0.1rem 0.5rem $bunkie-color-dark;
 
         form {
             display: flex;
@@ -36,6 +37,7 @@
                 border-radius: 1rem;
                 border-color: transparent;
                 color: $bunkie-color-dark;
+                box-shadow: 0.05rem 0.05rem 0.5rem $bunkie-color-dark;
             }
 
             #submit-btn {

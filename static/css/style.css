@@ -51,7 +51,8 @@ a {
   #login-section #login-form {
     background-color: #0989FB;
     border-radius: 1rem;
-    padding: 1.5rem 1rem; }
+    padding: 1.5rem 1rem;
+    box-shadow: 0.1rem 0.1rem 0.5rem #041F57; }
     #login-section #login-form form {
       display: flex;
       flex-direction: column;
@@ -62,7 +63,8 @@ a {
         padding: 0.25rem 1rem;
         border-radius: 1rem;
         border-color: transparent;
-        color: #041F57; }
+        color: #041F57;
+        box-shadow: 0.05rem 0.05rem 0.5rem #041F57; }
       #login-section #login-form form #submit-btn {
         background-color: #041F57;
         color: #DCE5FC;
