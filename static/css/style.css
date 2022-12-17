@@ -73,4 +73,61 @@ a {
           cursor: pointer;
           background-color: #062c7c; }
 
+#console-section {
+  margin: auto;
+  width: 75%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+  #console-section input, #console-section textarea {
+    margin: 0rem 0.5rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem;
+    border-color: transparent;
+    color: #041F57;
+    box-shadow: 0.1rem 0.1rem 0.5rem #041F57; }
+  #console-section #ban-warn-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start; }
+    #console-section #ban-warn-form form {
+      display: flex;
+      align-items: flex-start;
+      margin: 1rem 0rem; }
+      #console-section #ban-warn-form form textarea {
+        transform: height, 0.5s; }
+        #console-section #ban-warn-form form textarea:focus {
+          height: 5rem; }
+      #console-section #ban-warn-form form #ban-submit-btn {
+        background-color: #ee352f;
+        font-size: 1.25rem;
+        color: white;
+        transform: background-color, 0.5s; }
+        #console-section #ban-warn-form form #ban-submit-btn:hover {
+          cursor: pointer;
+          background-color: #d81812; }
+      #console-section #ban-warn-form form #warn-submit-btn {
+        background-color: #ffcc42;
+        font-size: 1.25rem;
+        color: black;
+        transform: background-color, 0.5s; }
+        #console-section #ban-warn-form form #warn-submit-btn:hover {
+          cursor: pointer;
+          background-color: #ffbe0f; }
+  #console-section #reset-form form {
+    display: flex;
+    align-items: flex-start;
+    margin: 1rem 0rem; }
+    #console-section #reset-form form input {
+      padding: 0.5rem 1rem;
+      font-size: 1.25rem;
+      color: white;
+      background-color: #0989FB;
+      transform: background-color, 0.5s; }
+      #console-section #reset-form form input:hover {
+        cursor: pointer;
+        background-color: #036ece; }
+
 /*# sourceMappingURL=style.css.map */
