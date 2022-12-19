@@ -17,7 +17,7 @@
         box-shadow: 0.1rem 0.1rem 0.5rem $bunkie-color-dark;
     }
 
-    #ban-warn-form {
+    #get-ban-warn-form {
         display: flex;
         flex-direction: column;
         justify-content: start;
@@ -32,6 +32,18 @@
 
                 &:focus {
                     height: 5rem;
+                }
+            }
+
+            #get-submit-btn {
+                background-color: rgb(141, 250, 90);
+                font-size: $bunkie-font-l;
+                color: black;
+                transform: background-color, 0.5s;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: darken(rgb(141, 250, 90), 10);
                 }
             }
 
