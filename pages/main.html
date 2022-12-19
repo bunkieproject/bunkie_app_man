@@ -33,7 +33,13 @@
     <section id="console-section">
 
         <!-- Forms -->
-        <div id="ban-warn-form">
+        <div id="get-ban-warn-form">
+            <form name="get-user" action="" onsubmit="getUserByUsername(this); return false;">
+                <input type="text" name="user-name" placeholder="Username">
+                <textarea id="user-id-field" name="user-id" placeholder="User's ID"></textarea>
+                <input id="get-submit-btn" type="submit" value="Get">
+            </form>
+
             <form name="ban" action="" method="post" onsubmit="banUser(this); return false;">
                 <input type="text" name="user-id" placeholder="User ID">
                 <input id="ban-submit-btn" type="submit" value="Ban">
