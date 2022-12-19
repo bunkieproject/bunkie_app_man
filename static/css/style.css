@@ -88,32 +88,40 @@ a {
     border-color: transparent;
     color: #041F57;
     box-shadow: 0.1rem 0.1rem 0.5rem #041F57; }
-  #console-section #ban-warn-form {
+  #console-section #get-ban-warn-form {
     display: flex;
     flex-direction: column;
     justify-content: start; }
-    #console-section #ban-warn-form form {
+    #console-section #get-ban-warn-form form {
       display: flex;
       align-items: flex-start;
       margin: 1rem 0rem; }
-      #console-section #ban-warn-form form textarea {
+      #console-section #get-ban-warn-form form textarea {
         transform: height, 0.5s; }
-        #console-section #ban-warn-form form textarea:focus {
+        #console-section #get-ban-warn-form form textarea:focus {
           height: 5rem; }
-      #console-section #ban-warn-form form #ban-submit-btn {
+      #console-section #get-ban-warn-form form #get-submit-btn {
+        background-color: #8dfa5a;
+        font-size: 1.25rem;
+        color: black;
+        transform: background-color, 0.5s; }
+        #console-section #get-ban-warn-form form #get-submit-btn:hover {
+          cursor: pointer;
+          background-color: #6bf929; }
+      #console-section #get-ban-warn-form form #ban-submit-btn {
         background-color: #ee352f;
         font-size: 1.25rem;
         color: white;
         transform: background-color, 0.5s; }
-        #console-section #ban-warn-form form #ban-submit-btn:hover {
+        #console-section #get-ban-warn-form form #ban-submit-btn:hover {
           cursor: pointer;
           background-color: #d81812; }
-      #console-section #ban-warn-form form #warn-submit-btn {
+      #console-section #get-ban-warn-form form #warn-submit-btn {
         background-color: #ffcc42;
         font-size: 1.25rem;
         color: black;
         transform: background-color, 0.5s; }
-        #console-section #ban-warn-form form #warn-submit-btn:hover {
+        #console-section #get-ban-warn-form form #warn-submit-btn:hover {
           cursor: pointer;
           background-color: #ffbe0f; }
   #console-section #reset-form form {
