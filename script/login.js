@@ -1,4 +1,4 @@
-var adminLoginRequestRoute = "https://bunkie-foja2uwzca-oa.a.run.app/users/admin/login";
+var adminLoginRequestRoute = "https://gateway-bunkie-9l5d0gmk.nw.gateway.dev/users/admin/login";
 
 async function validateForm(form) {
     let uname = form["admin-uname"].value;

@@ -1,6 +1,6 @@
-var getUserListRequestRoute = "https://bunkie-foja2uwzca-oa.a.run.app/users/admin/get_users";
-var banUserRequestRoute = "https://bunkie-foja2uwzca-oa.a.run.app/users/admin/ban_user";
-var warnUserRequestRoute = "https://bunkie-foja2uwzca-oa.a.run.app/users/admin/warn_user"; 
+var getUserListRequestRoute = "https://gateway-bunkie-9l5d0gmk.nw.gateway.dev/users/admin/get_users";
+var banUserRequestRoute = "https://gateway-bunkie-9l5d0gmk.nw.gateway.dev/users/admin/ban_user";
+var warnUserRequestRoute = "https://gateway-bunkie-9l5d0gmk.nw.gateway.dev/users/admin/warn_user"; 
 
 
 async function getUserByUsername(form) {
