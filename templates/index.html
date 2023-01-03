@@ -20,9 +20,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,400" rel="stylesheet">
 
     <!-- Style and Scripts -->
-    <link rel="shortcut icon" type="image/x-icon" href="docs/img/icon.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{icon}}" />
     <link rel="stylesheet" href="static/css/style.css">
-    <script src="script/login.js"></script>
 </head>
 
 
@@ -33,13 +32,13 @@
 
         <!-- Logo -->
         <div id="logo">
-            <img src="docs/img/logo.png" alt="bunkie Logo">
+            <img src="{{logo}}" alt="bunkie Logo">
         </div>
         
         <!-- Form -->
         <div id="login-form">
-            <form name="login" action="pages/main.html" method="post" onsubmit="validateForm(this); return false;">
-                <input type="text" name="admin-uname" id="username" placeholder="username">
+            <form name="login" action="/login" method="post">
+                <input type="text" name="admin-email" id="email" placeholder="email">
                 <input type="password" name="admin-pw" id="password" placeholder="password">
                 <input id="submit-btn" type="submit" value="Log In">
             </form>
