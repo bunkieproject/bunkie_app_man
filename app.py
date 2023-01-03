@@ -36,5 +36,16 @@ def login():
     else:
         return None, response.status_code, headers
 
+@app.route('/get_users', methods=['POST'])
+def get_user():
+    username = request.form['uname']
+    headers = {'Access-Control-Allow-Origin': '*',
+            'Content-Type': 'application/json; charset=UTF-8'}
+    response = requests.post(
+        app.config['SERVER']+'/users/admin/get_users',
+        json={"token": app.config['TOKEN']},
+        headers=headers)
+    print(response)
+
 if __name__ == "__main__":
     app.run()

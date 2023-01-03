@@ -34,19 +34,19 @@
 
         <!-- Forms -->
         <div id="get-ban-warn-form">
-            <form name="get-user" action="" onsubmit="getUserByUsername(this); return false;">
-                <input type="text" name="user-name" placeholder="Username">
-                <textarea id="user-id-field" name="user-id" placeholder="User's ID"></textarea>
+            <form name="get-user" action="/get_users" method="post">
+                <input type="text" name="uname" placeholder="Username">
+                <textarea id="user-id-field" name="userid" placeholder="User's ID"></textarea>
                 <input id="get-submit-btn" type="submit" value="Get">
             </form>
 
-            <form name="ban" action="" method="post" onsubmit="banUser(this); return false;">
-                <input type="text" name="user-id" placeholder="User ID">
+            <form name="ban" action="/ban_user" method="post">
+                <input type="text" name="userid" placeholder="User ID">
                 <input id="ban-submit-btn" type="submit" value="Ban">
             </form>
 
-            <form name="warn" action="" method="post" onsubmit="warnUser(this); return false;">
-                <input type="text" name="user-id" placeholder="User ID">
+            <form name="warn" action="/warn_user" method="post">
+                <input type="text" name="userid" placeholder="User ID">
                 <textarea name="message" placeholder="Enter your warning message..."></textarea>
                 <input id="warn-submit-btn" type="submit" value="Warn">
             </form>
@@ -54,7 +54,7 @@
 
         <!-- Clear -->
         <div id="reset-form">
-            <form name="reset" action="" method="post" onsubmit="resetSystem(); return false;">
+            <form name="reset" action="/reset" method="post">
                 <input id="ban-submit-btn" type="submit" value="Reset">
             </form>
         </div>
