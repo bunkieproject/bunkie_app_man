@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, Response
 import requests
 import json
 import os
+from logger import Logger
 
 SERVER = 'https://bunkie-backend-foja2uwzca-ey.a.run.app'
 TOKEN = ""
@@ -11,6 +12,7 @@ app = Flask(__name__)
 app.config['SERVER'] = SERVER
 app.config['TOKEN'] = TOKEN
 app.config['IMAGE_FOLDER'] = IMAGE_FOLDER
+logger = Logger("Bunkie-Web-App")
 
 @app.route('/')
 def index():
@@ -33,6 +35,7 @@ def login():
         app.config['TOKEN'] = dict(json.loads(response.text))['token']
         icon_filename = os.path.join(app.config['IMAGE_FOLDER'], 'icon.png')
         logo_filename = os.path.join(app.config['IMAGE_FOLDER'], 'logo.png')
+        logger.info("Logged in.")
         return render_template("console.html", icon=icon_filename, logo=logo_filename, user_id="")
     
     else:
@@ -54,7 +57,28 @@ def get_user():
 
     for account in response.json()["result"]:
         if account["username"] == username:
+            logger.info("User ID is fetched.")
             return render_template("console.html", icon=icon_filename, logo=logo_filename, user_id=account["user_id"])
+
+    logger.warning("Failed to get User ID")
+    return render_template("console.html", icon=icon_filename, logo=logo_filename, user_id="")
+
+@app.route("/ban_user", methods=["POST"])
+def ban_user():
+    user_id = request.form['userid']
+    headers = {'Access-Control-Allow-Origin': '*',
+            'Content-Type': 'application/json; charset=UTF-8'}
+
+    response = requests.post(
+        app.config['SERVER']+'/users/admin/get_users',
+        json={"token": app.config['TOKEN'], "user_id": user_id},
+        headers=headers)
+
+    icon_filename = os.path.join(app.config['IMAGE_FOLDER'], 'icon.png')
+    logo_filename = os.path.join(app.config['IMAGE_FOLDER'], 'logo.png')
+
+    if response.status_code == 200:
+        logger.info("User: '{}' is banned".format(user_id))
 
     return render_template("console.html", icon=icon_filename, logo=logo_filename, user_id="")
 
