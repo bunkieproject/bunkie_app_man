@@ -9,48 +9,48 @@
     align-items: center;
 
     input, textarea {
+        height: 3.5rem;
+        width: 12.5rem;
         margin: 0rem 0.5rem;
         padding: 0.5rem 1.5rem;
         border-radius: 1rem;
         border-color: transparent;
         color: $bunkie-color-dark;
-        box-shadow: 0.1rem 0.1rem 0.5rem $bunkie-color-dark;
     }
 
     #get-ban-warn-form {
         display: flex;
         flex-direction: column;
-        justify-content: start;
 
         form {
             display: flex;
-            align-items: flex-start;
+            flex-direction: row;
+            justify-content: end;
+            align-items: center;
             margin: 1rem 0rem;
 
-            textarea {
-                transform: height, 0.5s;
-
-                &:focus {
-                    height: 5rem;
-                }
-            }
-
             #get-submit-btn {
-                background-color: rgb(141, 250, 90);
-                font-size: $bunkie-font-l;
+                width: auto;
+                height: auto;
+                background-color: rgb(99, 196, 55);
+                font-size: $bunkie-font-s;
                 color: black;
+                box-shadow: 0.05rem 0.05rem 0.5rem $bunkie-color-dark;
                 transform: background-color, 0.5s;
 
                 &:hover {
                     cursor: pointer;
-                    background-color: darken(rgb(141, 250, 90), 10);
+                    background-color: darken(rgb(99, 196, 55), 10);
                 }
             }
 
             #ban-submit-btn {
+                width: auto;
+                height: auto;
                 background-color: rgb(238, 53, 47);
-                font-size: $bunkie-font-l;
+                font-size: $bunkie-font-s;
                 color: white;
+                box-shadow: 0.05rem 0.05rem 0.5rem $bunkie-color-dark;
                 transform: background-color, 0.5s;
 
                 &:hover {
@@ -60,9 +60,12 @@
             }
 
             #warn-submit-btn {
+                width: auto;
+                height: auto;
                 background-color: rgb(255, 204, 66);
-                font-size: $bunkie-font-l;
+                font-size: $bunkie-font-s;
                 color: black;
+                box-shadow: 0.05rem 0.05rem 0.5rem $bunkie-color-dark;
                 transform: background-color, 0.5s;
 
                 &:hover {
@@ -74,22 +77,26 @@
     }
 
     #reset-form {
+        display: flex;
+        flex-direction: row;
         form {
             display: flex;
             align-items: flex-start;
             margin: 1rem 0rem;
             
             input {
+                width: auto;
+                height: auto;
                 padding: 0.5rem 1rem;
-                font-size: $bunkie-font-l;
+                font-size: $bunkie-font-s;
                 color: white;
-                
-                background-color: $bunkie-color-bright;
+                box-shadow: 0.05rem 0.05rem 0.5rem $bunkie-color-dark;
+                background-color: rgb(238, 53, 47);
                 transform: background-color, 0.5s;
 
                 &:hover {
                     cursor: pointer;
-                    background-color: darken($bunkie-color-bright, 10);
+                    background-color: darken(rgb(238, 53, 47), 10);
                 }
             }
         }
