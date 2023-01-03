@@ -82,60 +82,73 @@ a {
   flex-direction: column;
   align-items: center; }
   #console-section input, #console-section textarea {
+    height: 3.5rem;
+    width: 12.5rem;
     margin: 0rem 0.5rem;
     padding: 0.5rem 1.5rem;
     border-radius: 1rem;
     border-color: transparent;
-    color: #041F57;
-    box-shadow: 0.1rem 0.1rem 0.5rem #041F57; }
+    color: #041F57; }
   #console-section #get-ban-warn-form {
     display: flex;
-    flex-direction: column;
-    justify-content: start; }
+    flex-direction: column; }
     #console-section #get-ban-warn-form form {
       display: flex;
-      align-items: flex-start;
+      flex-direction: row;
+      justify-content: end;
+      align-items: center;
       margin: 1rem 0rem; }
-      #console-section #get-ban-warn-form form textarea {
-        transform: height, 0.5s; }
-        #console-section #get-ban-warn-form form textarea:focus {
-          height: 5rem; }
       #console-section #get-ban-warn-form form #get-submit-btn {
-        background-color: #8dfa5a;
-        font-size: 1.25rem;
+        width: auto;
+        height: auto;
+        background-color: #63c437;
+        font-size: 0.75rem;
         color: black;
+        box-shadow: 0.05rem 0.05rem 0.5rem #041F57;
         transform: background-color, 0.5s; }
         #console-section #get-ban-warn-form form #get-submit-btn:hover {
           cursor: pointer;
-          background-color: #6bf929; }
+          background-color: #4f9c2c; }
       #console-section #get-ban-warn-form form #ban-submit-btn {
+        width: auto;
+        height: auto;
         background-color: #ee352f;
-        font-size: 1.25rem;
+        font-size: 0.75rem;
         color: white;
+        box-shadow: 0.05rem 0.05rem 0.5rem #041F57;
         transform: background-color, 0.5s; }
         #console-section #get-ban-warn-form form #ban-submit-btn:hover {
           cursor: pointer;
           background-color: #d81812; }
       #console-section #get-ban-warn-form form #warn-submit-btn {
+        width: auto;
+        height: auto;
         background-color: #ffcc42;
-        font-size: 1.25rem;
+        font-size: 0.75rem;
         color: black;
+        box-shadow: 0.05rem 0.05rem 0.5rem #041F57;
         transform: background-color, 0.5s; }
         #console-section #get-ban-warn-form form #warn-submit-btn:hover {
           cursor: pointer;
           background-color: #ffbe0f; }
-  #console-section #reset-form form {
+  #console-section #reset-form {
     display: flex;
-    align-items: flex-start;
-    margin: 1rem 0rem; }
-    #console-section #reset-form form input {
-      padding: 0.5rem 1rem;
-      font-size: 1.25rem;
-      color: white;
-      background-color: #0989FB;
-      transform: background-color, 0.5s; }
-      #console-section #reset-form form input:hover {
-        cursor: pointer;
-        background-color: #036ece; }
+    flex-direction: row; }
+    #console-section #reset-form form {
+      display: flex;
+      align-items: flex-start;
+      margin: 1rem 0rem; }
+      #console-section #reset-form form input {
+        width: auto;
+        height: auto;
+        padding: 0.5rem 1rem;
+        font-size: 0.75rem;
+        color: white;
+        box-shadow: 0.05rem 0.05rem 0.5rem #041F57;
+        background-color: #ee352f;
+        transform: background-color, 0.5s; }
+        #console-section #reset-form form input:hover {
+          cursor: pointer;
+          background-color: #d81812; }
 
 /*# sourceMappingURL=style.css.map */
