@@ -28,11 +28,13 @@ def login():
         app.config['SERVER']+'/users/admin/login',
         json={"username_or_email": email, "password": password},
         headers=headers)
+
     if response.status_code == 200:
         app.config['TOKEN'] = dict(json.loads(response.text))['token']
         icon_filename = os.path.join(app.config['IMAGE_FOLDER'], 'icon.png')
         logo_filename = os.path.join(app.config['IMAGE_FOLDER'], 'logo.png')
-        return render_template("console.html", icon=icon_filename, logo=logo_filename)
+        return render_template("console.html", icon=icon_filename, logo=logo_filename, user_id="")
+    
     else:
         return None, response.status_code, headers
 
@@ -41,11 +43,20 @@ def get_user():
     username = request.form['uname']
     headers = {'Access-Control-Allow-Origin': '*',
             'Content-Type': 'application/json; charset=UTF-8'}
+
     response = requests.post(
         app.config['SERVER']+'/users/admin/get_users',
         json={"token": app.config['TOKEN']},
         headers=headers)
-    print(response)
+
+    icon_filename = os.path.join(app.config['IMAGE_FOLDER'], 'icon.png')
+    logo_filename = os.path.join(app.config['IMAGE_FOLDER'], 'logo.png')
+
+    for account in response.json()["result"]:
+        if account["username"] == username:
+            return render_template("console.html", icon=icon_filename, logo=logo_filename, user_id=account["user_id"])
+
+    return render_template("console.html", icon=icon_filename, logo=logo_filename, user_id="")
 
 if __name__ == "__main__":
     app.run()
