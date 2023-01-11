@@ -44,21 +44,6 @@
                 }
             }
 
-            #ban-submit-btn {
-                width: auto;
-                height: auto;
-                background-color: rgb(238, 53, 47);
-                font-size: $bunkie-font-s;
-                color: white;
-                box-shadow: 0.05rem 0.05rem 0.5rem $bunkie-color-dark;
-                transform: background-color, 0.5s;
-
-                &:hover {
-                    cursor: pointer;
-                    background-color: darken(rgb(238, 53, 47), 10);
-                }
-            }
-
             #warn-submit-btn {
                 width: auto;
                 height: auto;
@@ -71,6 +56,51 @@
                 &:hover {
                     cursor: pointer;
                     background-color:  darken(rgb(255, 204, 66), 10);
+                }
+            }
+
+            #ban-submit-btn {
+                width: auto;
+                height: auto;
+                background-color: rgb(255, 120, 0);
+                font-size: $bunkie-font-s;
+                color: white;
+                box-shadow: 0.05rem 0.05rem 0.5rem $bunkie-color-dark;
+                transform: background-color, 0.5s;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: darken(rgb(255, 120, 0), 10);
+                }
+            }
+
+            #unban-submit-btn {
+                width: auto;
+                height: auto;
+                background-color: rgb(0, 135, 255);
+                font-size: $bunkie-font-s;
+                color: black;
+                box-shadow: 0.05rem 0.05rem 0.5rem $bunkie-color-dark;
+                transform: background-color, 0.5s;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color:  darken(rgb(0, 135, 255), 10);
+                }
+            }
+
+            #del-submit-btn {
+                width: auto;
+                height: auto;
+                background-color: rgb(238, 53, 47);
+                font-size: $bunkie-font-s;
+                color: black;
+                box-shadow: 0.05rem 0.05rem 0.5rem $bunkie-color-dark;
+                transform: background-color, 0.5s;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color:  darken(rgb(238, 53, 47), 10);
                 }
             }
         }

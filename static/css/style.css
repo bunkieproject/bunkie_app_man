@@ -109,17 +109,6 @@ a {
         #console-section #get-ban-warn-form form #get-submit-btn:hover {
           cursor: pointer;
           background-color: #4f9c2c; }
-      #console-section #get-ban-warn-form form #ban-submit-btn {
-        width: auto;
-        height: auto;
-        background-color: #ee352f;
-        font-size: 0.75rem;
-        color: white;
-        box-shadow: 0.05rem 0.05rem 0.5rem #041F57;
-        transform: background-color, 0.5s; }
-        #console-section #get-ban-warn-form form #ban-submit-btn:hover {
-          cursor: pointer;
-          background-color: #d81812; }
       #console-section #get-ban-warn-form form #warn-submit-btn {
         width: auto;
         height: auto;
@@ -131,6 +120,39 @@ a {
         #console-section #get-ban-warn-form form #warn-submit-btn:hover {
           cursor: pointer;
           background-color: #ffbe0f; }
+      #console-section #get-ban-warn-form form #ban-submit-btn {
+        width: auto;
+        height: auto;
+        background-color: #ff7800;
+        font-size: 0.75rem;
+        color: white;
+        box-shadow: 0.05rem 0.05rem 0.5rem #041F57;
+        transform: background-color, 0.5s; }
+        #console-section #get-ban-warn-form form #ban-submit-btn:hover {
+          cursor: pointer;
+          background-color: #cc6000; }
+      #console-section #get-ban-warn-form form #unban-submit-btn {
+        width: auto;
+        height: auto;
+        background-color: #0087ff;
+        font-size: 0.75rem;
+        color: black;
+        box-shadow: 0.05rem 0.05rem 0.5rem #041F57;
+        transform: background-color, 0.5s; }
+        #console-section #get-ban-warn-form form #unban-submit-btn:hover {
+          cursor: pointer;
+          background-color: #006ccc; }
+      #console-section #get-ban-warn-form form #del-submit-btn {
+        width: auto;
+        height: auto;
+        background-color: #ee352f;
+        font-size: 0.75rem;
+        color: black;
+        box-shadow: 0.05rem 0.05rem 0.5rem #041F57;
+        transform: background-color, 0.5s; }
+        #console-section #get-ban-warn-form form #del-submit-btn:hover {
+          cursor: pointer;
+          background-color: #d81812; }
   #console-section #reset-form {
     display: flex;
     flex-direction: row; }
